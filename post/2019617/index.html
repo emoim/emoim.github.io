@@ -7,110 +7,65 @@
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://emoim.github.io/favicon.ico?v=1560870470848">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://emoim.github.io/favicon.ico?v=1560870651222">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://emoim.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
+
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://emoim.github.io">emoi</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://emoim.github.io">
+        <img src="https://emoim.github.io/images/avatar.png?v=1560870651222" class="site-logo">
+        <h1 class="site-title">emoi</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="/" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
+      
         
-      </ul>
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-</nav>
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>2019/6/17</h1>
-            <p class="article-meta">
-              2019-06-17
-              
-            </p>
-            
-            <div class="post-content">
-              <p>用一个字来形容我现在的生活，就是“乱”。
-##乱糟糟的生活
-老婆昨天晚上生气回娘家了，主要原因我觉得不是我的错，周六周日在家躺了两天，周天早晨不做饭就算了，也没有一句知心的话。我招谁惹谁了？活该没人疼？
-姐姐这两天在催我给姐夫调动工作，我不是没有尽力，但是远水止不了近渴，我让人帮忙，人家不给面子我也是没有办法的。
-##乱糟糟的工作
-来A01已经一个多月了，我干了什么，我也不知道，碌碌无为的一个多月，我真不知道做好了还是做错了。位子也是比较尴尬，既然没有设备部，你说你让我到这里来干什么？今天发了晋升通知，陈晓杰应该是升至少一级，我升不升？我不知道，因为名单里面没有我。即使给我升级，能给我涨多少薪水？我一点也没有勇气去问。麻痹的，乱糟糟的工作！
-##乱糟糟的新家
-没有经历去整新家，美缝已经搞了快一个月了，一楼的卫生间还没有搞完，今天上班路上我想请三天假专门去搞，可是今天竟然没有勇气去请假，这就是窝窝囊囊的我，这就是一个我自己都快看不起的我。随着年龄的增长，我慢慢的成为了那个我自己都看不起的人，原来的一切不喜欢的习惯慢慢也成为了我自己的习惯，身材一点点的发福，嘴一点都控制不住。每天都决心好好学习，可就是忍不住要看一眼手机，这就是那个垃圾的我。用垃圾来形容，都是便宜了我。
-做一个好人，做一个有用的人，从明天开始，每天都作对一件事情，就像今天我把AGV小车整好了一台，就像今天我努力的去推动MES管控螺丝高度一样，虽然有很多困难，我努力去做了，至少今天是值得的，对吗？</p>
-
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-        </div>
-        
-      </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://emoim.github.io/images/avatar.png?v=1560870470848" class="no-responsive avatar">
-    <div class="text-muted"></div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
     <div class="social-container">
       
         
@@ -124,37 +79,43 @@
         
       
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://emoim.github.io/post/2019617">2019/6/17</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
+    <div class="site-description">
       
     </div>
-  </div>
-  <div class="paper">
-     | <a class="rss" href="https://emoim.github.io/atom.xml" target="_blank">RSS</a>
+    <div class="site-footer">
+       | <a class="rss" href="https://emoim.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
 
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">2019/6/17</h2>
+            <div class="post-date">2019-06-17</div>
+            
+            <div class="post-content">
+              <p>用一个字来形容我现在的生活，就是“乱”。
+##乱糟糟的生活
+老婆昨天晚上生气回娘家了，主要原因我觉得不是我的错，周六周日在家躺了两天，周天早晨不做饭就算了，也没有一句知心的话。我招谁惹谁了？活该没人疼？
+姐姐这两天在催我给姐夫调动工作，我不是没有尽力，但是远水止不了近渴，我让人帮忙，人家不给面子我也是没有办法的。
+##乱糟糟的工作
+来A01已经一个多月了，我干了什么，我也不知道，碌碌无为的一个多月，我真不知道做好了还是做错了。位子也是比较尴尬，既然没有设备部，你说你让我到这里来干什么？今天发了晋升通知，陈晓杰应该是升至少一级，我升不升？我不知道，因为名单里面没有我。即使给我升级，能给我涨多少薪水？我一点也没有勇气去问。麻痹的，乱糟糟的工作！
+##乱糟糟的新家
+没有经历去整新家，美缝已经搞了快一个月了，一楼的卫生间还没有搞完，今天上班路上我想请三天假专门去搞，可是今天竟然没有勇气去请假，这就是窝窝囊囊的我，这就是一个我自己都快看不起的我。随着年龄的增长，我慢慢的成为了那个我自己都看不起的人，原来的一切不喜欢的习惯慢慢也成为了我自己的习惯，身材一点点的发福，嘴一点都控制不住。每天都决心好好学习，可就是忍不住要看一眼手机，这就是那个垃圾的我。用垃圾来形容，都是便宜了我。
+做一个好人，做一个有用的人，从明天开始，每天都作对一件事情，就像今天我把AGV小车整好了一台，就像今天我努力的去推动MES管控螺丝高度一样，虽然有很多困难，我努力去做了，至少今天是值得的，对吗？</p>
+
+            </div>
+            
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -164,6 +125,13 @@
 AOS.init();
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
