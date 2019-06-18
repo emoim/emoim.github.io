@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://emoi.github.io</id>
+    <id>https://emoim.github.io</id>
     <title>emoi</title>
-    <updated>2019-06-17T12:36:39.554Z</updated>
+    <updated>2019-06-18T14:54:29.319Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://emoi.github.io"/>
-    <link rel="self" href="https://emoi.github.io/atom.xml"/>
-    <logo>https://emoi.github.io/images/avatar.png</logo>
-    <icon>https://emoi.github.io/favicon.ico</icon>
+    <link rel="alternate" href="https://emoim.github.io"/>
+    <link rel="self" href="https://emoim.github.io/atom.xml"/>
+    <logo>https://emoim.github.io/images/avatar.png</logo>
+    <icon>https://emoim.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, emoi</rights>
     <entry>
         <title type="html"><![CDATA[2019/6/17]]></title>
-        <id>https://emoi.github.io/post/2019617</id>
-        <link href="https://emoi.github.io/post/2019617">
+        <id>https://emoim.github.io/post/2019617</id>
+        <link href="https://emoim.github.io/post/2019617">
         </link>
         <updated>2019-06-17T12:23:52.000Z</updated>
         <content type="html"><![CDATA[<p>用一个字来形容我现在的生活，就是“乱”。
